@@ -1,0 +1,18 @@
+import datetime
+
+def main():
+    # Prompt the user for their name and age
+    name = input("What is your name? ")
+    age = int(input("How old are you? "))
+    
+    # Get the real-world current year dynamically (do not hardcode)
+    current_year = datetime.datetime.now().year
+    
+    # Calculate the birth year assuming the user's birthday has already passed this year
+    birth_year = current_year - age
+    
+    # Output the formatted message to the display
+    print(f"\nHello {name}! You were born in {birth_year}.")
+
+if __name__ == "__main__":
+    main()
